@@ -92,7 +92,7 @@ if sheet_file:
     )
 
     df['UTM-X'], df['UTM-Y'] = zip(
-        *df.apply(lambda x: transformer.transform(x.longitude, x.latitude),
+        *df.apply(lambda x: transformer.transform(x[latitude], x[longitude]),
                   axis=1))
 
     st.write(
