@@ -1,0 +1,5 @@
+numpy==1.22.3
+pandas==1.4.3
+streamlit==1.11.1
+openpyxl==3.0.9
+pyproj==3.4.0
