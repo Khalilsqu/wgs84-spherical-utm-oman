@@ -87,7 +87,8 @@ if sheet_file:
     )
 
     latitude = st.selectbox(
-        "what is latitude columns"
+        "what is latitude columns",
+        df.columns
     )
 
     df['UTM-X'], df['UTM-Y'] = zip(
